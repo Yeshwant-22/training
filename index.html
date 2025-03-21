@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="about" class="container">
+        <img src="profilepic.jpeg" alt="Profile Picture" class="profile-pic">
+        <h2>About Me</h2>
+        <br>
+        <p>Hello! My name is John Doe. I love coding and web development.</p>
+    </div>
+
+    <div id="hobbies" class="container">
+        <h2>My Hobbies</h2>
+        <br>
+            <ul>
+                <li>Cooking</li>
+                <li>Reading</li>
+                <li>Traveling</li>
+            </ul>
+    </div>
+
+    <div id="work" class="container">
+        <h2>My Work</h2>
+        <div class="work-gallery">
+            <img src="work.jpg" alt="Work Sample">
+            <img src="work.jpg" alt="Work Sample">
+            <img src="work.jpg" alt="Work Sample">
+            <img src="work.jpg" alt="Work Sample">
+            <img src="work.jpg" alt="Work Sample">
+            <img src="work.jpg" alt="Work Sample">
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <h2>Contact Me</h2>
+        <br>
+        <p>Email: <a href="mailto:john@example.com">john@example.com</a></p>
+        <br>
+        <h3>Send Me a Message</h3>
+    </div>
+
+    <div id = "forms" class="forms">
+        <form>
+            <label for="name">Name:</label>
+            <input type="username" id="name" name="name" placeholder="type your name" required >
+
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option>Select your location</option>
+                <option value="us">USA</option>
+                <option value="uk">India</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"  placeholder="your message" required></textarea >
+            <div>
+                <input type="radio" name="mas" value="kaji:" id="option1">
+                <label for="option1">kaji:</label>
+            </div>
+
+            <div>
+                <input type="radio" name="mas" value="yesh:" id="option2">
+                <label for="option2">yesh:</label>
+            </div>
+
+            
+           
+            <br><br>
+            <button type="submit" value="submit the form">Send</button>
+        </form>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2025 Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
