@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Font Size Updator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #text {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .btn {
+            font-size: 20px;
+            font-weight: bold;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .btn:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FONT SIZE UPDATOR</h1>
+    <button id="decreaseBtn" class="btn" onclick="changeSize(-3)">-</button>
+    <span id="displayText">CHANGE MY FONT SIZE</span>
+    <button id="increaseBtn" class="btn" onclick="changeSize(3)">+</button>
+    <p id="sizeDisplay">FONT SIZE IS 16</p>
+
+    <script>
+        let fontSize = 16;  // Initial font size        
+        const minSize = 5;
+        const maxSize = 30;
+
+        function changeSize(value) {
+                fontSize = fontSize+value;
+
+                if (fontSize < minSize) {
+                    fontSize = minSize;
+                    window.alert("Font size cannot be less than " + minSize + "px!");
+                }
+                if (fontSize > maxSize) {
+                    fontSize = maxSize;
+                    window.alert("Font size cannot be more than " + maxSize + "px!");
+                }
+
+                document.getElementById("increaseBtn").disabled = (fontSize === maxSize);
+                document.getElementById("decreaseBtn").disabled = (fontSize === minSize);
+
+            
+                document.getElementById("displayText").style.fontSize = fontSize + "px";
+                document.getElementById("sizeDisplay").innerText = "FONT SIZE IS " + fontSize;
+                console.log("Font size updated to " + fontSize + "px");
+            
+        }
+    </script>
+
+</body>
+</html>
