@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+<body>
+    <!--1.Changing Text Content Dynamically -->
+    <h1 id="name">Hello, World! </h1>
+    <button onclick="text()">Click</button>
+
+     <!--2. Changing Background Color on Button Click -->
+     <h2> Click below button to change bg color</h2>
+     <button onclick="color()">Change color</button>
+     <br>
+
+     <!--3. Getting Input Value and Displaying It -->
+     <br>
+     <input type = "text" id ="iname">
+     <button onclick="sayhi()">Submit</button>
+     <h2 id = "sayhii"></h2>
+
+    <!--4. Adding and Removing Elements Dynamically -->
+    <br>
+    <h2>List</h2>
+    <ul id="list">
+        <li>Item 1</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Item</button>
+
+    <!--5. Event Listener on Button Click -->
+    <h2>Event Listener</h2>
+    <button id="myButton">Click Me</button>
+
+     <!--6. Set Timeout - Delayed Action -->
+     <h2>Set TimeOut</h2>
+     <button onclick="showMessage()">Click Me</button>
+     <h2 id="message"></h2>
+
+     <!-- 8. Alert, Confirm, and Prompt (JS BOM)-->
+     <h2>Alert, Confirm, and Prompt (JS BOM)</h2>
+     <button onclick="showAlert()">Alert</button>
+     <button onclick="showConfirm()">Confirm</button>
+     <button onclick="showPrompt()">Prompt</button>
+ 
+     <h2 id="messagehere">...</h2>
+
+     <!-- 9. Keyboard Event Listener-->
+     <h2>Keyboard Event Listener</h2>
+     <input type="text" id="textInput">
+     <h2 id="output"></h2>
+
+     <!-- 10. Redirecting to Another Page (Window )-->
+     <h2>Redirecting to Another Page (Window)</h2>
+     <button onclick="redirect()">Go to Google</button>
+     <button onclick="openNewTab()">Open Google in New Tab</button>
+    <script src="exercise2.js"></script>
+    
+</body>
+</html>
